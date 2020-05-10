@@ -28,7 +28,7 @@ def filter_to_file(filename):
                 parentlist.append(data)
 
     # write data to a file appended with datetime
-    filename = filename.rsplit('_')[0]
+    filename = filename.rsplit(scraped_prefix)[0]
     date_time = datetime.utcnow().strftime('%m_%d_%H%M%S%f')[:-3]
     processed_file_name = filename + processed_prefix + date_time + extension
     with open(processed_file_name, "w+") as p:
