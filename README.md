@@ -1,1 +1,1 @@
-# First dig at scraping and RegEx in Python.
+# First dig into scraping and RegEx in Python.
